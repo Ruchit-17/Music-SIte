@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon (1).ico">
+  <title>Music Site</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+      <nav class="menu">
+          <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+          </button>
+          <ul id="menu-list">
+            <li class="menu-ele">
+              <a href="https://www.youtube.com/watch?v=OPf0YbXqDm0&list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj">POP</a>
+            </li >
+            <li class="menu-ele">
+              <a href="https://www.youtube.com/watch?v=BkBkxM2MOmw&list=PLetgZKHHaF-Zq1Abh-ZGC4liPd_CV3Uo4">Hip-Hop</a>
+            </li>
+            <li class="menu-ele">
+              <a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk&list=PL64E6BD94546734D8">Dance/Electronic</a>
+            </li>
+            <li class="menu-ele">
+              <a href="https://www.youtube.com/watch?v=Ps4aVpIESkc&list=PL9bw4S5ePsEEqCMJSiYZ-KTtEjzVy0YvK">Bollywood</a>
+            </li>
+            <li class="menu-ele">
+              <a href="https://www.youtube.com/watch?v=O8bZF_UhPag">Podcasts</a>
+            </li>
+          </ul>
+        </nav>
+    <div class="top">
+      <header class="hero">
+        <h1>Chill Mix</h1>
+        <p>best chill music</p>
+      </header>
+      <div class="cta cta1">
+        <h1 class="price">Romantic</h1>
+        <p class="price1">Era of love </p>
+      </div>
+      <div class="cta cta2">
+        <p class="price">Pop</p>
+        <p class="price1">Rock music</p>
+      </div>
+
+    </div>
+
+    <section class="features gallery">
+        <h2>Your Favourites</h2>
+      <div class="feature" id="feature1">
+        <span class="icon">🎵</span>
+        <h3>BOLLYWOOD</h3>
+        <p class="para">Pritam, Shreya Ghoshal , Arijit singh , A.R. Rahman,Neeti Mohan ,Tanishk Bagchi</p>
+      </div>
+      <div class="feature" id="feature2">
+        <span class="icon">🎶</span>
+        <h3>Punjabi</h3>
+        <p class="para">Diljit Dosanjh ,Sidhu Moosewala , Karan Ajula, AP Dhillon</p>
+      </div>
+      <div class="feature" id="feature3" >
+        <span class="icon">🎸</span>
+        <h3>Indie India</h3>
+        <p class="para">Diljit Dosanjh ,Sidhu Moosewala , Karan Ajula, AP Dhillon</p>
+      </div>
+      <div class="feature" id="feature4">
+        <span class="icon">📻</span>
+        <h3>Old Classics</h3>
+        <p class="para">Udit Narayan ,Javed Ali , Vishal Mishra , Lata Mangeshkar</p>
+      </div>
+      <div class="feature" id="feature5">
+        <span class="icon">🎹</span>
+        <h3>2010 Mix</h3>
+        <p id="para1">The Weeknd , Lauv , 5 seconds of Summer , Zayn Malik</p>
+      </div>
+      <div class="feature" id="feature6">
+        <span class="icon">🎷</span>
+        <h3>Hip Hop Mix</h3>
+        <p class="para">Post Malone , Drake ,Travis Scott , Jack Harlow</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="images/one_now.webp" alt="post_weeknd" class="about__mockup">
+      <div class="about__details">
+        <h2>New Release </h2>
+        <p>The power pact song perfect for your gym workouts</p>
+        <p>-by postmalone ft. Weeknd</p>
+        <button><a href="https://www.youtube.com/watch?v=OCogbzIvYg0">listen→</a> </button>
+      </div>
+    </section>
+
+
+    <section class="gallery">
+      <h2>Popular Singers</h2>
+      <img src="images/Ed.jpg" alt="">
+      <img src="images/enrique.jpg" alt="">
+      <img src="images/joji.jpg" alt="">
+      <img src="images/postmalone.jpg" alt="">
+      <img src="images/sean.jpg" alt="">
+      <img src="images/weeknd.webp" alt="">
+    </section>
+  </div>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+</body>
+
+</html>
